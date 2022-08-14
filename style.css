@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;/*border-box hace que todos los contenedores tengan exactamente el tamaño que se asigne con width y height. esto se explica en la CLASE 24 BOX MODEL*/
+}
+
+.canvas{
+    display: grid;
+    grid-template: repeat(16, 35px) / repeat(13, 35px);
+    justify-content: center;
+    grid-template-areas: 
+      ".       .       .    hat    hat    hat    hat    hat    hat        .       .       .       ." 
+      ".       .      hat2  hat2   hat2   hat2   hat2   hat2   hat2      hat2    hat2    hat2     ."
+      ".       .      hair  hair   hair   head   head   head   eye       head2    .       .       ."
+      ".     hair3    ear   hair2  head3  head3  head3  head3  eye       nose    nose    nose     ."
+      ".     hair3    ear   hair4  hair4  head4  head4  head4  head4     moust   nose2   nose2  nose2"
+      ".     hair3    hair5 head5  head5  head5  head5  head5  moust2    moust2  moust2  moust2   .  "
+      ".       .       .    head6  head6  head6  head6  head6  head6     head6   head6      .     .  "
+      ".       .     shirt  shirt  jean   shirt2 shirt2 shirt2 shirt2      .       .        .     .  "
+      ".     shirt3  shirt3 shirt3 jean   shirt4 shirt4 jean2  shirt5    shirt5  shirt5     .     .  "
+   "shirt6   shirt6  shirt6 shirt6 jean   jean3  jean3  jean3  shirt7    shirt7  shirt7   shirt7  .  "
+   "hand     hand    shirt8 jean4  button jean5  jean5  button2 jean6    shirt9  hand2     hand2  .  "
+   "hand3    hand3   hand3  jean7  jean7  jean7  jean7  jean7  jean7     hand4   hand4     hand4  .  "
+   "hand5    hand5   jean8  jean8  jean8  jean8  jean8  jean8  jean8     jean8   hand6     hand6  .  "
+   "  .        .     jean9  jean9  jean9    .    .      jean10  jean10   jean10     .        .    .  "
+   "  .      shoe    shoe   shoe     .      .    .         .     shoe2  shoe2    shoe2       .    .  "
+   "shoe3    shoe3   shoe3  shoe3    .      .    .         .     shoe4    shoe4   shoe4  shoe4     .  ";
+  }
+
+  .canvas__hat {
+    grid-area: hat;
+    background-color: red;
+  }
+
+  .canvas__hat2 {
+    grid-area: hat2;
+    background-color: red; 
+  }
+
+  .canvas__hair {
+    grid-area: hair;
+    background-color: #9b4f00; 
+  }
+ 
+  .canvas__head {
+    grid-area: head;
+    background-color: #fed291; 
+  }
+ 
+  .canvas__eye {
+    grid-area: eye;
+    background-color: black; 
+  }
+
+  .canvas__head2 {
+    grid-area: head2;
+    background-color: #fed291; 
+  }
+
+  .canvas__hair2 {
+    grid-area: hair2;
+    background-color: #9b4f00; 
+  }
+
+  .canvas__hair3 {
+    grid-area: hair3;
+    background-color: #9b4f00; 
+  }
+
+  .canvas__ear {
+    grid-area: ear;
+    background-color: #fed291; 
+  }
+
+  .canvas__head3 {
+    grid-area: head3;
+    background-color: #fed291; 
+  }
+
+  .canvas__nose {
+    grid-area: nose;
+    background-color: #fed291; 
+  }
+
+  .canvas__nose2 {
+    grid-area: nose2;
+    background-color: #fed291; 
+  }
+
+  .canvas__head4 {
+    grid-area: head4;
+    background-color: #fed291; 
+  }
+
+  .canvas__hair4 {
+    grid-area: hair4;
+    background-color: #9b4f00; 
+  }
+
+  .canvas__moust {
+    grid-area: moust;
+    background-color: black; 
+  }
+
+  .canvas__hair5 {
+    grid-area: hair5;
+    background-color: #9b4f00; 
+  }
+
+  .canvas__head5 {
+    grid-area: head5;
+    background-color: #fed291; 
+  }
+
+  .canvas__moust2 {
+    grid-area: moust2;
+    background-color: black; 
+  }
+
+  .canvas__head6 {
+    grid-area: head6;
+    background-color: #fed291; 
+  }
+
+  .canvas__shirt {
+    grid-area: shirt;
+    background-color: red; 
+  }
+
+  .canvas__jean {
+    grid-area: jean;
+    background-color: #4c00df; 
+  }
+
+  .canvas__jean2 {
+    grid-area: jean2;
+    background-color: #4c00df; 
+  }
+
+  .canvas__jean3 {
+    grid-area: jean3;
+    background-color: #4c00df; 
+  }
+
+  .canvas__shirt2 {
+    grid-area: shirt2;
+    background-color: red; 
+  }
+
+  .canvas__shirt3 {
+    grid-area: shirt3;
+    background-color: red; 
+  }
+
+  .canvas__shirt4 {
+    grid-area: shirt4;
+    background-color: red; 
+  }
+
+  .canvas__shirt5 {
+    grid-area: shirt5;
+    background-color: red; 
+  }
+  .canvas__shirt6 {
+    grid-area: shirt6;
+    background-color: red; 
+  }
+  .canvas__shirt7 {
+    grid-area: shirt7;
+    background-color: red; 
+  }
+
+  .canvas__shirt8 {
+    grid-area: shirt8;
+    background-color: red; 
+  }
+  .canvas__shirt9 {
+    grid-area: shirt9;
+    background-color: red; 
+  }
+
+  .canvas__hand {
+    grid-area: hand;
+    background-color: #fed291; 
+  }
+
+  .canvas__hand2 {
+    grid-area: hand2;
+    background-color: #fed291; 
+  }
+
+  .canvas__jean4 {
+    grid-area: jean4;
+    background-color: #4c00df; 
+  }
+
+  .canvas__jean5 {
+    grid-area: jean5;
+    background-color: #4c00df; 
+  }
+
+  .canvas__jean6 {
+    grid-area: jean6;
+    background-color: #4c00df; 
+  }
+
+  .canvas__button {
+    grid-area: button;
+    background-color: yellow; 
+  }
+
+  .canvas__button2 {
+    grid-area: button2;
+    background-color: yellow; 
+  }
+
+  .canvas__jean7 {
+    grid-area: jean7;
+    background-color: #4c00df; 
+  }
+
+  .canvas__hand3 {
+    grid-area: hand3;
+    background-color: #fed291; 
+  }
+
+  .canvas__hand4 {
+    grid-area: hand4;
+    background-color: #fed291; 
+  }
+
+  .canvas__hand5 {
+    grid-area: hand5;
+    background-color: #fed291; 
+  }
+
+  .canvas__hand6 {
+    grid-area: hand6;
+    background-color: #fed291; 
+  }
+
+  .canvas__jean8 {
+    grid-area: jean8;
+    background-color: #4c00df; 
+  }
+
+  .canvas__jean9 {
+    grid-area: jean9;
+    background-color: #4c00df;
+  }
+
+  .canvas__jean10 {
+    grid-area: jean10;
+    background-color: #4c00df;
+  }
+
+  .canvas__shoe {
+    grid-area: shoe;
+    background-color: #9b4f00; 
+  }
+
+  .canvas__shoe2 {
+    grid-area: shoe2;
+    background-color: #9b4f00; 
+  }
+
+  .canvas__shoe3 {
+    grid-area: shoe3;
+    background-color: #9b4f00; 
+  }
+
+  .canvas__shoe4 {
+    grid-area: shoe4;
+    background-color: #9b4f00; 
+  }
+
+  
+
+  
+ 
+
+ 
