@@ -1,6 +1,4 @@
-# only movies
-
-movies search app consuming movie db api
+# mario bros created with css grid
 
 ## Preview
 
@@ -8,4 +6,4 @@ movies search app consuming movie db api
 
 ## Getting Started 🚀
 
-[click here to see the project](https://fabio-andres.github.io/stopwatch/)
+[click here to see the project]()
